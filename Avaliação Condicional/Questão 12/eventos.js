@@ -26,10 +26,10 @@ let mediaAvaliacao = (avaliacao1 + avaliacao2*2 + avaliacao3*3 + mediaExercicios
 let conceito;
 
 console.log('Aluno: ', NumeroAluno, );
-console.log('Notas dos exercicios:', 'nota 1: ',exercicio1, 'nota 2: ',exercicio2, 'nota 3: ',exercicio3, );
-console.log('Media dos exercicios: ', mediaExercicios.toFixed(2), );
-console.log('Notas das avaliacoes:', 'nota 1: ',avaliacao1, 'nota 2: ',avaliacao2, 'nota 3: ',avaliacao3, );
-console.log('Media de aproveitamento: ', mediaAvaliacao.toFixed(2), );
+console.log('Notas dos exercicios:', 'nota 1: ',exercicio1, 'nota 2: ',exercicio2, 'nota 3: ',exercicio3);
+console.log('Media dos exercicios: ');
+console.log('Notas das avaliacoes:', 'nota 1: ',avaliacao1, 'nota 2: ',avaliacao2, 'nota 3: ',avaliacao3);
+console.log('Media de aproveitamento: ', mediaAvaliacao);
 
 switch (mediaAvaliacao >= 0) {
     
