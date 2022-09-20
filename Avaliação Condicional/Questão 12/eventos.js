@@ -25,9 +25,9 @@ let avaliacao3 = 80;
 let mediaAvaliacao = (avaliacao1 + avaliacao2*2 + avaliacao3*3 + mediaExercicios)/7;
 let conceito;
 
-console.log('Aluno: ', NumeroAluno, );
+console.log('Aluno: ', NumeroAluno);
 console.log('Notas dos exercicios:', 'nota 1: ',exercicio1, 'nota 2: ',exercicio2, 'nota 3: ',exercicio3);
-console.log('Media dos exercicios: ');
+console.log('Media dos exercicios: ', mediaExercicios);
 console.log('Notas das avaliacoes:', 'nota 1: ',avaliacao1, 'nota 2: ',avaliacao2, 'nota 3: ',avaliacao3);
 console.log('Media de aproveitamento: ', mediaAvaliacao);
 
