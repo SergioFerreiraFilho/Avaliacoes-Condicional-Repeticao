@@ -25,33 +25,23 @@ let avaliacao3 = 80;
 let mediaAvaliacao = (avaliacao1 + avaliacao2*2 + avaliacao3*3 + mediaExercicios)/7;
 let conceito;
 
-console.log('Aluno: ', NumeroAluno);
+console.log('Aluno: ', NumeroAluno, );
 console.log('Notas dos exercicios:', 'nota 1: ',exercicio1, 'nota 2: ',exercicio2, 'nota 3: ',exercicio3);
 console.log('Media dos exercicios: ', mediaExercicios);
 console.log('Notas das avaliacoes:', 'nota 1: ',avaliacao1, 'nota 2: ',avaliacao2, 'nota 3: ',avaliacao3);
-console.log('Media de aproveitamento: ', mediaAvaliacao);
+console.log('Media de aproveitamento: ', mediaAvaliacao );
 
-switch (mediaAvaliacao >= 0) {
+if (mediaAvaliacao >= 90) {
+    conceito = 'A'
+} else if (mediaAvaliacao >= 75 && mediaAvaliacao < 90) {
+    conceito = 'B'
+} else if (mediaAvaliacao >= 60 && mediaAvaliacao < 75) {
+    conceito = 'C'
+} else if (mediaAvaliacao >= 40 && mediaAvaliacao < 60) {
+    conceito = 'D'
+} else if (mediaAvaliacao < 40) {
+    conceito = 'E'
     
-    case (mediaAvaliacao >= 90):
-        conceito = 'A';
-        break;
-    case (mediaAvaliacao >= 70 && mediaAvaliacao < 90):
-        conceito = 'B';
-        break;
-    case (mediaAvaliacao >= 60 && mediaAvaliacao < 70):
-        conceito = 'C';
-        break;
-    case (mediaAvaliacao >= 40 && mediaAvaliacao < 60):
-        conceito = 'D';
-        break;
-   
-    case (mediaAvaliacao < 40):
-        conceito = 'E';
-        break;
-
-    default:
-        break;
 }
 
 if(conceito == 'A' || conceito == 'B' || conceito == 'C' ){
@@ -62,5 +52,6 @@ if(conceito == 'A' || conceito == 'B' || conceito == 'C' ){
     console.log('Reprovado ');
     console.log(' Conceito ', conceito);
 }
+
 
 
